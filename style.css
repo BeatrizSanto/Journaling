@@ -1,0 +1,116 @@
+:root {
+  --text-color: #dee0e3;
+  --background-imagem: url('fundo-de-tecnologia-futurista.jpg');
+  --highlight: #ffffff;
+  --border-radius: 12px;
+  --box-bg: rgba(0, 0, 0, 0.6);
+}
+
+html {
+  height: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: var(--text-color);
+  background-image: var(--background-imagem);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+main {
+  width: 90%;
+  max-width: 800px;
+}
+
+.container {
+  width: 90%;
+  max-width: 800px;
+  margin: 0 auto;
+  background-color: var(--box-bg);
+  padding: 20px 30px;
+  border-radius: var(--border-radius);
+  box-shadow: 0 0 15px rgba(0, 255, 225, 0.2);
+  backdrop-filter: blur(8px);
+}
+
+.main-header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main-header h1 {
+  font-size: 2.5em;
+  color: var(--highlight);
+}
+
+.subtitle {
+  font-style: italic;
+  color: #ffffff;
+}
+
+.entries-section h2 {
+  font-size: 1.8em;
+  margin-bottom: 15px;
+  color: var(--highlight);
+  text-align: center;
+}
+
+.journal-entry {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 6px solid var(--highlight);
+  border-radius: var(--border-radius);
+}
+
+.entry-header h3 {
+  font-size: 1.4em;
+  color: #ffffff;
+}
+
+.entry-header time {
+  font-size: 0.9em;
+  color: hsl(0, 0%, 100%);
+}
+
+.entry-content p {
+  margin-top: 10px;
+  font-size: 1.05em;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  padding: 10px;
+  color: #ffffff;
+}
+
+.mood-button {
+  background: linear-gradient(135deg, #7b2ff7, #f107a3);
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 25px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 0.95em;
+  margin-top: 15px;
+  transition: transform 0.2s ease;
+}
+
+.mood-button:hover {
+  transform: scale(1.05);
+}
